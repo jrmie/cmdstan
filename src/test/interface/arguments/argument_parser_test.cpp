@@ -1,4 +1,5 @@
 #include <cmdstan/arguments/argument_parser.hpp>
+#include <cmdstan/arguments/arg_method.hpp>
 #include <cmdstan/arguments/arg_id.hpp>
 #include <cmdstan/arguments/arg_data.hpp>
 #include <cmdstan/arguments/arg_init.hpp>
@@ -9,6 +10,7 @@
 #include <gtest/gtest.h>
 
 using cmdstan::argument;
+using cmdstan::arg_method;
 using cmdstan::arg_id;
 using cmdstan::arg_data;
 using cmdstan::arg_init;
@@ -22,6 +24,7 @@ public:
   void SetUp() {
     // copied setup from src/stan/common/command.hpp
     // FIXME: move to factory?
+    valid_arguments.push_back(new arg_method());
     valid_arguments.push_back(new arg_id());
     valid_arguments.push_back(new arg_data());
     valid_arguments.push_back(new arg_init());
