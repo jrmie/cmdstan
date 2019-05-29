@@ -95,6 +95,7 @@ namespace cmdstan {
 
     // Read arguments
     std::vector<argument*> valid_arguments;
+    valid_arguments.push_back(new arg_method());
     valid_arguments.push_back(new arg_id());
     valid_arguments.push_back(new arg_data());
     valid_arguments.push_back(new arg_init());
