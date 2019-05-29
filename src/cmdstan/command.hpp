@@ -2,6 +2,7 @@
 #define CMDSTAN_COMMAND_HPP
 
 #include <cmdstan/arguments/argument_parser.hpp>
+#include <cmdstan/arguments/arg_method.hpp>
 #include <cmdstan/arguments/arg_data.hpp>
 #include <cmdstan/arguments/arg_id.hpp>
 #include <cmdstan/arguments/arg_init.hpp>
